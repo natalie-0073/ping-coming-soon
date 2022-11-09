@@ -1,0 +1,61 @@
+@mixin inputShape($padd){
+    border-radius: 50px;
+    padding: 15px 50px 15px $padd;
+}
+main{
+    @include flexCenter(column);
+    
+}
+.main-form{
+    width: 100%;
+    form{
+        @include flexCenter(row);
+        gap: 15px;
+    }
+}
+.main-form__input{
+    @include inputShape(20px);
+    border: 1px solid $pale-blue;
+    min-width: 20%;
+    &::placeholder{
+        color: $gray;
+    }
+}
+.main-form__button{
+    @include inputShape(50px);
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    background-color: $primary-blue;
+    color: #fff;
+    border: none;
+    transition: all .2s;
+    font-family: $font-family;
+    font-weight: 600;
+    &:hover{
+        opacity: .9;
+        cursor: pointer;
+    }
+}
+.main-picture{
+    max-width: 500px;
+    margin-top:50px ;
+    img{
+        width: 100%;
+    }
+}
+@media(max-width:$screen-change){
+    .main-form{
+        form{
+            flex-direction: column;
+            &>*{
+                
+                margin: auto 20px;
+            }
+        }
+        &__input{
+            width: calc(100% - 120px);
+        }
+        &__button{
+            width: calc(100% - 50px);
+        }
+    }
+}
