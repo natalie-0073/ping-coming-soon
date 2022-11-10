@@ -12,7 +12,6 @@ header {
 .header-text {
   text-align: center;
 }
-
 .header-text__h {
   font-size: 2.5rem;
   color: hsl(0deg, 0%, 59%);
@@ -21,7 +20,6 @@ header {
   color: black;
   font-weight: 700;
 }
-
 .header-text__p {
   margin: 15px auto 30px auto;
 }
@@ -51,7 +49,6 @@ main {
   align-items: center;
   gap: 15px;
 }
-
 .main-form__input {
   border-radius: 50px;
   padding: 15px 50px 15px 20px;
@@ -67,7 +64,6 @@ main {
 .main-form__input::placeholder {
   color: hsl(0deg, 0%, 59%);
 }
-
 .main-form__button {
   border-radius: 50px;
   padding: 15px 50px 15px 50px;

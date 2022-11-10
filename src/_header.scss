@@ -14,19 +14,19 @@ header{
 }
 .header-text{
     text-align: center;
-}
-.header-text__h{
-    
-    font-size: 2.5rem;
+    &__h{
+        font-size: 2.5rem;
    color: $gray;
    .accent{
     color: black;
     font-weight: 700;
    }
+    }
+    &__p{
+        margin: 15px auto 30px auto;
+    }
 }
-.header-text__p{
-    margin: 15px auto 30px auto;
-}
+
 @media(max-width:$screen-change){
 .header-text__h{
     font-size: 1.5rem;
