@@ -12,7 +12,7 @@
     <title>Ping coming soon</title>
 </head>
 <body>
-    <header>
+    <header class="header">
         <div class="header-logo">
             <img src="src/images/logo.svg"/>
         </div>
@@ -21,19 +21,23 @@
             <div class="header-text__p">Subscribe and get notified</div>
         </div>
     </header>
-    <main>
+    <main class="main">
         <div class="main-form">
-            <form>
+            <form class="form" id="form">
                 <input class="main-form__input" type="email" placeholder="Your email address..."></input>
+               
             <input class="main-form__button" type="submit" value="Notify Me"></input>
-            </form>
             
+            </form>
+            <!-- <span class=" error-active">Please provide a valid email address</span> -->
         </div>
+        
+        
         <div class="main-picture">
             <img src="src/images/illustration-dashboard.png"/>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <div class="footer-socials">
            <ion-icon name="logo-facebook"></ion-icon>
            <ion-icon name="logo-twitter"></ion-icon>
@@ -43,5 +47,6 @@
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

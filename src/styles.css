@@ -1,4 +1,4 @@
-header {
+.header {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -32,7 +32,7 @@ header {
     margin: 20px auto 30px auto;
   }
 }
-main {
+.main {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -42,7 +42,17 @@ main {
 .main-form {
   width: 100%;
 }
-.main-form form {
+.main-form .error input {
+  border-color: hsl(354deg, 100%, 66%);
+}
+.main-form .error .error-text {
+  position: absolute;
+  transform: translateX(-150px) translateY(34px);
+  font-style: italic;
+  color: hsl(354deg, 100%, 66%);
+  font-size: 0.7rem;
+}
+.main-form .form {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -88,11 +98,16 @@ main {
   width: 100%;
 }
 
+@media (max-width: 1174px) {
+  .main-form .error .error-text {
+    transform: translateX(-110px) translateY(40px);
+  }
+}
 @media (max-width: 445px) {
-  .main-form form {
+  .main-form .form {
     flex-direction: column;
   }
-  .main-form form > * {
+  .main-form .form > * {
     margin: auto 20px;
   }
   .main-form__input {
@@ -101,8 +116,19 @@ main {
   .main-form__button {
     width: calc(100% - 50px);
   }
+  .main-form .error {
+    gap: 35px;
+  }
+  .main-form .error .error-text {
+    transform: translateX(-80px) translateY(0px);
+  }
 }
-footer {
+@media (max-width: 350px) {
+  .main-form .error .error-text {
+    transform: translateX(0px) translateY(0px);
+  }
+}
+.footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
